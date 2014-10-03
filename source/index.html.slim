@@ -1,0 +1,21 @@
+---
+title: Pattern Library
+---
+
+.ui.one.column.page.grid
+ .column
+    h1.ui.header Patternzzz
+
+    .ui.relaxed.stackable.grid
+      .four.wide.column
+        = partial 'navigation'
+
+      .twelve.wide.column
+        / .ui.active.fluid.tab
+        /   p Based off of Semantic UI, but adapted for use with Bourbon/Neat.
+
+        = partial 'shared/elements/show'
+        = partial 'shared/collections/show'
+        = partial 'shared/views/show'
+        = partial 'shared/modules/show'
+        = partial 'shared/behaviors/show'
