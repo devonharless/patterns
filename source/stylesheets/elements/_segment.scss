@@ -90,6 +90,8 @@
 }
 
 .ui.segment > :last-child {
+  //Deal with margin-top issues
+  margin-top: 0em;
   margin-bottom: 0em;
 }
 

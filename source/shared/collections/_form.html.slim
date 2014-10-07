@@ -1,0 +1,128 @@
+h4.ui.small.header Form
+
+form.ui.form.segment
+  .field
+    label Username
+    .ui.left.labeled.icon.input
+      input type='text' placeholder='username'
+      i.user.icon
+
+      .ui.corner.label
+        i.icon.asterisk
+
+  .field
+    label Password
+    .ui.left.labeled.icon.input
+      input type='password' placeholder='password'
+      i.lock.icon
+
+      .ui.corner.label
+        i.icon.asterisk
+
+  .ui.error.message
+    h5.ui.small.header We noticed some issues.
+
+  button.ui.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Textarea
+
+form.ui.form
+  .field
+    label User text
+    textarea
+
+.ui.section.divider
+
+h4.ui.small.header Checkboxes...needs JS
+
+form.ui.segment.form
+  .inline.field
+    .js.ui.checkbox
+      input type='checkbox'
+      label Standard checkbox
+
+  .inline.field
+    .js.ui.toggle.checkbox
+      input type='checkbox'
+      label Toggle
+
+  .inline.field
+    .js.ui.slider.checkbox
+      input type='checkbox'
+      label Slider
+
+.ui.section.divider
+
+h4.ui.small.header Checkboxes - HTML only, no JS
+small Use for attr in label, and id in checkbox element
+
+form.ui.segment.form
+  .inline.field
+    .ui.checkbox
+      input type='checkbox' id='standard'
+      label for='standard' Standard checkbox
+
+  .inline.field
+    .ui.toggle.checkbox
+      input type='checkbox' id='toggle'
+      label for='toggle' Toggle
+
+  .inline.field
+    .ui.slider.checkbox
+      input type='checkbox' id='slider'
+      label for='slider' Slider
+
+.ui.section.divider
+
+h4.ui.small.header Radios - JS
+
+form.ui.segment.form
+  .grouped.inline.fields
+    .field
+      .js.ui.radio.checkbox
+        input type='radio' name='fruit' checked=''
+        label Apples
+    .field
+      .js.ui.radio.checkbox
+        input type='radio' name='fruit' checked=''
+        label Oranges
+    .field
+      .js.ui.radio.checkbox
+        input type='radio' name='fruit' checked=''
+        label Bananas
+
+.ui.section.divider
+
+h4.ui.small.header Radios - HTML only, no JS
+
+form.ui.segment.form
+  .grouped.inline.fields
+    .field
+      .ui.radio.checkbox
+        input id='apples' type='radio' name='fruit' checked=''
+        label for='apples' Apples
+    .field
+      .ui.radio.checkbox
+        input id='oranges' type='radio' name='fruit' checked=''
+        label for='oranges' Oranges
+    .field
+      .ui.radio.checkbox
+        input id='bananas' type='radio' name='fruit' checked=''
+        label for='bananas' Bananas
+
+.ui.section.divider
+
+h4.ui.small.header Selects
+
+form.ui.form
+  .ui.selection.dropdown
+    input type='hidden' name='gender'
+    .default.text Gender
+    i.dropdown.icon
+    .menu.ui.transition.hidden
+      .item data-value='male' Male
+      .item data-value='female' Female
+
+

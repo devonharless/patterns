@@ -3,5 +3,185 @@ h4.ui.header Labels
 p Basic label
 
 .ui.label
+  | Mail
+
+.ui.section.divider
+
+p Label with a detail
+
+.ui.label
+  | Mail
+  .detail 33
+
+.ui.section.divider
+
+p Label with an icon
+
+.ui.label
   i.mail.icon
   | Mail
+
+.ui.section.divider
+
+p Label with an inline link
+
+.ui.label
+  | Inbox
+  a.detail
+    i.mail.icon
+    | 23
+
+.ui.section.divider
+
+p Label with an image
+
+.ui.image.label
+  img src='images/snapshot.png'
+  | me@awesome.com
+  i.delete.icon
+
+.ui.section.divider
+
+p Label relatively positioned in the corner of an element
+
+.ui.segment
+  .ui.green.corner.label
+    i.star.icon
+  .ui.left.corner.label
+    .text New
+  | Pellentesque eleifend viverra velit non auctor.
+    Nullam in pharetra massa. Fusce nec maximus erat,
+    vel bibendum mauris.
+
+.ui.section.divider
+
+p Ribbon label
+
+.ui.ribbon.label Awesome
+
+p Ribbon label with an attached element
+
+.ui.segment
+  .ui.ribbon.label Awesome
+  p Unicorns are amazing, magical creatures. Random fact:
+    Scotland's national animal is a unicorn.
+  .ui.purple.ribbon.label Amazing
+
+.ui.section.divider
+
+p Label attached to a content segment
+
+.ui.three.column.grid
+  .row
+    .column
+      .ui.segment
+        .ui.top.attached.label Top label
+        p Bottom content section
+    .column
+      .ui.segment
+        .ui.bottom.attached.label Bottom label
+        p Top content section
+    .column
+      .ui.segment
+        .ui.top.right.attached.label Top-right
+        p Bottom content section
+  .row
+    .column
+      .ui.segment
+        .ui.top.left.attached.label Top left
+        p Bottom content section
+    .column
+      .ui.segment
+        .ui.bottom.left.attached.label Bottom left
+        p Top content section
+    .column
+      .ui.segment
+        .ui.bottom.right.attached.label Bottom-right
+        p Bottom content section
+
+.ui.section.divider
+
+p Horizontal label
+
+.ui.divided.selection.list
+  .item
+    .ui.orange.horizontal.label dog
+    | Corgis
+  .item
+    .ui.purple.horizontal.label bird
+    | Hummingbirds
+  .item
+    .ui.green.horizontal.label reptile
+    | Geckos
+
+.ui.section.divider
+
+p Circular/pill label
+
+.ui.black.circular.label
+  | 23
+.ui.purple.circular.label
+  | 300
+.ui.green.circular.label
+
+.ui.section.divider
+
+p Floating label
+
+.ui.compact.menu
+  a.item
+    i.mail.icon
+    | Message
+    .ui.floating.red.label  23
+  a.item
+    i.users.icon
+    | Friends
+    .ui.floating.purple.label 4
+
+.ui.section.divider
+
+p Pointing label
+
+form.ui.form
+  .field
+    input type='text' placeholder='First name'
+    .ui.pointing.label
+      | Please add your first name
+
+  .ui.simple.divider
+
+  .field
+    .ui.pointing.below.label
+      | Please add your last name
+    input type='text' placeholder='Last name'
+
+  .ui.simple.divider
+
+  .inline.field
+    input type='text' placeholder='Username'
+    .ui.pointing.left.label
+      | That name is already taken!
+
+  .ui.simple.divider
+
+  .inline.field
+    .ui.pointing.right.label
+      | Your password must be 6 characters or more
+    input type='password'
+
+.ui.section.divider
+
+p Label sizes
+
+.ui.small.label Small
+.ui.medium.label Medium
+.ui.large.label Large
+
+.ui.section.divider
+
+p Labels share same size in group
+.ui.large.labels
+  .ui.label All large
+  .ui.label All large
+  .ui.label All large
+  .ui.label All large
