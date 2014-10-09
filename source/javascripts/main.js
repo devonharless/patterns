@@ -11,5 +11,5 @@ $(document).ready(function(){
   $('.js.ui.checkbox, .js.ui.radio.checkbox').checkbox();
 
   //Set selects & dropdowns
-  $('.ui.selection.dropdown').dropdown();
+  $('.ui.selection.dropdown, .item.dropdown').dropdown();
 });
