@@ -125,4 +125,179 @@ form.ui.form
       .item data-value='male' Male
       .item data-value='female' Female
 
+.ui.section.divider
 
+h4.ui.small.header
+  | Text blocks - info, errors, warning
+  br
+  small
+    | Hidden by default
+
+form.ui.form
+  .ui.message
+    h5.header There are some issues.
+    ui.list
+      li Please enter your first name.
+      li Please enter your last name.
+
+.ui.section.divider
+
+h4.ui.small.header Loading state
+form.ui.loading.form.segment
+  .two.fields
+    .field
+      label Username
+      .ui.left.labeled.icon.input
+        input type='text' placeholder='username'
+        i.user.icon
+    .field
+      label Password
+      .ui.left.labeled.icon.input
+        input type='password' placeholder='password'
+        i.lock.icon
+  button.ui.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Error state
+form.ui.error.form.segment
+  p.ui.error.message That username is already taken
+
+  .two.fields
+    .error.field
+      label Username
+      .ui.left.labeled.icon.input
+        input type='text' placeholder='username'
+        i.user.icon
+        .ui.red.pointing.above.ui.label Choose a different username
+    .field
+      label Password
+      .ui.left.labeled.icon.input
+        input type='password' placeholder='password'
+        i.lock.icon
+  button.ui.blue.submit.button Sign uo
+
+.ui.section.divider
+
+h4.ui.small.header Disabled state
+form.ui.form.segment
+  .two.fields
+    .disabled.field
+      label Username
+      .ui.left.labeled.icon.input
+        input type='text' placeholder='username' value="adathecorgi"
+        i.user.icon
+    .field
+      label Password
+      .ui.left.labeled.icon.input
+        input type='password' placeholder='password' value="sfsdfsf"
+        i.lock.icon
+  button.ui.disabled.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Fluid form, adjusted to container width
+.ui.two.column.grid
+  .row
+    .column
+      form.ui.fluid.form
+        .two.fields
+          .field
+            label Username
+            .ui.left.labeled.icon.input
+              input type='text' placeholder='username'
+              i.user.icon
+          .field
+            label Password
+            .ui.left.labeled.icon.input
+              input type='password' placeholder='password'
+              i.lock.icon
+        button.ui.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Form sizes
+.ui.two.column.grid
+  .row
+    .column
+      form.ui.small.fluid.form
+        .two.fields
+          .field
+            label Username
+            .ui.left.labeled.icon.input
+              input type='text' placeholder='username'
+              i.user.icon
+          .field
+            label Password
+            .ui.left.labeled.icon.input
+              input type='password' placeholder='password'
+              i.lock.icon
+        button.ui.small.blue.submit.button Sign in
+
+    .column
+      form.ui.large.fluid.form
+        .two.fields
+          .field
+            label Username
+            .ui.left.labeled.icon.input
+              input type='text' placeholder='username'
+              i.user.icon
+          .field
+            label Password
+            .ui.left.labeled.icon.input
+              input type='password' placeholder='password'
+              i.lock.icon
+        button.ui.large.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Inverted form
+form.ui.inverted.form.segment
+  .two.fields
+    .field
+      label Username
+      .ui.left.labeled.icon.input
+        input type='text' placeholder='username'
+        i.user.icon
+    .field
+      label Password
+      .ui.left.labeled.icon.input
+        input type='password' placeholder='password'
+        i.lock.icon
+  button.ui.blue.submit.button Sign in
+
+.ui.section.divider
+
+h4.ui.small.header Inverted form
+form.ui.small.form
+  .inline.field
+    label Username
+    input type='text' placeholder='username'
+
+.ui.section.divider
+
+h4.ui.small.header Field groups
+form.ui.form
+  .three.fields
+    .field
+      label Name
+      input type='text' placeholder='name'
+    .field
+      label Username
+      input type='text' placeholder='username'
+    .field
+      label Password
+      input type='password' placeholder='password'
+
+.ui.section.divider
+
+h4.ui.small.header Multiple inline fields
+form.ui.small.form
+  .inline.fields
+    .ui.field
+      label.ui.tiny.header Phone number
+      input type='text' placeholder='(xxx)'
+    .ui.field
+      input type='text' placeholder='xxx'
+    .ui.field
+      input type='text' placeholder='xxxx'
